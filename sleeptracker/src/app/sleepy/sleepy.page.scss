@@ -1,0 +1,60 @@
+
+
+.center {
+	text-align: center;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.content{
+	--background:#f4f7f8;
+	--background: url('https://steamuserimages-a.akamaihd.net/ugc/780658011418891569/25AC2C91B04260C038696F561387B8C91074BC9A/')  no-repeat center center fixed;
+
+}
+
+.radioOptions{
+	margin-top: 5%;
+	margin-left: 5%;
+    font-family: 'Roboto Slab', serif;
+    font-size:15px;
+}
+
+.title{
+	--background: #f4f7f8;
+	padding: 8px 8px;
+	background: #f4f7f8;
+	margin: 7px auto;
+	border-radius: 25px;
+
+}
+
+.options{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	border-radius: 35px;
+	border-color: black;
+	border-style: solid;
+
+
+}
+
+
+.submit{
+	--background: #1a8cff;
+
+}
+
+
+.moon{
+	width:20px;
+}
+
+#SubmitButton {
+	--border-width: 5px;
+ --background: #11317A;
+
+}
+

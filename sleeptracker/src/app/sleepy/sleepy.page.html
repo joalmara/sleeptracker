@@ -1,0 +1,79 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+</head
+>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Sleep Logger
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" padding>
+
+<ion-item class="title">
+  <ion-icon name="moon" slot="end"></ion-icon>
+  <ion-label><h1 class="center">How Sleepy Are You? </h1></ion-label>
+</ion-item>
+	
+
+<ol class="options" >
+      <li class="radioOptions">
+        <label>
+          <input name="question1" type="radio" value="1" (change) = radioChangedHandler($event) required> 
+          Feeling active, vital, alert, or wide awake
+        </label>
+      </li>
+
+      <li class="radioOptions">
+        <label>
+          <input name="question1" type="radio" value="2" (change) = radioChangedHandler($event)>
+          Functioning at high levels, but not at peak, able to concentrate
+        </label>
+      </li>
+
+      <li class="radioOptions">
+        <label>
+          <input name="question1" type="radio" value="3" (change) = radioChangedHandler($event)>
+          Awake, but relaxed; responsive but not fully alert
+        </label>
+      </li>
+
+      <li class="radioOptions">
+        <label>
+          <input name="question1" type="radio" value="4" (change) = radioChangedHandler($event)>
+         Somewhat foggy, let down
+        </label>
+      </li>
+
+      <li class="radioOptions">
+        <label>
+          <input name="question1" type="radio" value="5" (change) = radioChangedHandler($event)>
+         Foggy; losing interest in remaining awake; slowed down	
+        </label>
+      </li>
+
+        <li class="radioOptions">
+        <label>
+          <input name="question1" type="radio" value="6" (change) = radioChangedHandler($event)>
+         Sleepy, woozy, fighting sleep; prefer to lie down	
+        </label>
+      </li>
+
+        <li class="radioOptions">
+        <label>
+          <input name="question1" type="radio" value="7" (change) = radioChangedHandler($event)>
+         No longer fighting sleep, sleep onset soon; having dream-like thoughts		
+        </label>
+      </li>
+    </ol>
+
+
+ <p>
+	<ion-button class="submit" (click) = "recordTime()" (click)="presentToast()" size="large" shape="round" slot="end" id="SubmitButton">Submit Sleepiness </ion-button>
+</p>
+
+
+</ion-content>

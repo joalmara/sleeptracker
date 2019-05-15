@@ -1,0 +1,27 @@
+ion-content { 
+    --background: url('https://steamuserimages-a.akamaihd.net/ugc/780658011418891569/25AC2C91B04260C038696F561387B8C91074BC9A/')  no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.entryTitle{
+	color:white;
+	font-size:20px;
+	font-family: 'Roboto Slab', serif;
+
+}
+
+li{
+	color:white;
+	font-size:15px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+ul {
+	  list-style-type: none;
+
+}

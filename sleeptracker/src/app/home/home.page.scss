@@ -1,0 +1,76 @@
+ion-content { 
+    --background: url('https://steamuserimages-a.akamaihd.net/ugc/780658011418891569/25AC2C91B04260C038696F561387B8C91074BC9A/')  no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.startButtonContainer {
+	height: 10em;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+
+}
+
+.logo{
+
+    top:10%;
+
+    width: 70%;
+    margin-left: 52px;
+    margin-top: -10px;
+
+}
+
+#startButton{
+// --width: 300px;
+// --height:100px;
+//  --border-radius: 60%;
+
+    display:block;
+    --width:150px;
+    --height:150px;
+    line-height:60px;
+    --border: 2px solid #f5f5f5;
+    --border-radius: 90%;
+    --color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    --background: #8795E8;
+    --box-shadow: 0 0 3px gray;
+    font-size:30px;
+    font-weight:bold;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.instructions{
+// --width: 300px;
+// --height:100px;
+//  --border-radius: 60%;
+
+    font-weight:bold;
+    color:white;
+    text-align: center;
+    left: 0;
+    line-height: 390px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+    white-space: normal;
+
+}
+
+

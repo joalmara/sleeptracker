@@ -1,0 +1,42 @@
+ <head>
+<script src="node_modules/chart.js/Chart.min.js"></script>
+<script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+<script src="node_modules/chart.js/src/chart.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+</head>
+    	
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Sleep Logger
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+
+<div class="logo">
+  <img src="assets/img/logo4.png" alt="your image">
+</div>
+
+	<div class="instructions" >
+	 <p>	Click on "Begin" to start your sleep cycle! </p>
+	</div>
+  
+
+
+
+ <div class="startButtonContainer">
+	<ion-button id="startButton" (click) = "getStartTime()" (click) = "presentModal()" >Begin</ion-button>
+</div>
+
+
+
+
+</ion-content>
+
+

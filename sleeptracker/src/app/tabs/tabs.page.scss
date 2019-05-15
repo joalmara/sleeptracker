@@ -1,0 +1,6 @@
+ion-tabs {
+    --ion-tabbar-background-color: #7038FF;
+    // TODO: remove hack:
+    --ion-tabbar-text-color: rgba(var(--ion-text-color-rgb), 0.4) !important;
+    --ion-color-primary: var(--ion-text-color) !important;
+}

@@ -1,0 +1,113 @@
+ <head>
+<script src="node_modules/chart.js/Chart.min.js"></script>
+<script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+<script src="node_modules/chart.js/src/chart.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+</head>
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Visual</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+    <!-- Default Segment -->
+
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label> View Sleep Duration </ion-label>
+    <ion-toggle  [(ngModel)] ="toggleValue" (ionChange) = "calculateTimeDifference()"> </ion-toggle>
+  </ion-item>
+
+    <ion-item>
+    <ion-label> View your Sleepiness </ion-label>
+    <ion-toggle  [(ngModel)] ="sleepyToggle"  (ionChange) = "displaySleepinessGraph()"> </ion-toggle>
+  </ion-item>
+
+
+
+ 	<div *ngIf="toggleValue">
+	  <div style="display: block">
+	    <canvas baseChart
+	            [datasets]="barChartData"
+	            [labels]="barChartLabels"
+	            [options]="barChartOptions"
+	            [legend]="barChartLegend"
+	            [chartType]="barChartType"
+                [colors]="barChartColors"
+	            (chartHover)="chartHovered($event)"
+	            (chartClick)="chartClicked($event)"></canvas>
+	  </div>
+
+     <div class="entryTitle">
+        Your Recent Entries
+      </div>
+
+        <ul>
+          <li *ngFor="let entry of recentSleepDuration?.reverse()" style="font-color:white">
+            {{entry}}
+
+          </li>
+        </ul>
+
+
+</div>
+
+<!-- <ion-button > Show Sleep (Duration) Data </ion-button> -->
+
+
+<div *ngIf="sleepyToggle" class="row">
+  <div class="col-md-6">
+    <div style="display: block;">
+    <canvas baseChart width="400" height="400"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType"
+      
+				(chartHover)="chartHovered2($event)"
+           		 (chartClick)="chartClicked2($event)"></canvas>
+    </div>
+  </div>
+  <div class="col-md-6" style="margin-bottom: 10px">
+    
+  </div>
+
+
+ <div class="entryTitle">
+    Your Recent Entries
+  </div>
+
+    <ul>
+      <li *ngFor="let entry of recentEntries?.reverse()" style="font-color:white">
+        {{entry}}
+
+      </li>
+    </ul>
+
+
+</div>
+
+
+
+
+
+
+<!-- 	  <div class="col-md-6" style="margin-bottom: 10px">
+	    
+	  </div>
+ -->
+
+
+<!-- <ion-button> Show Sleepiness </ion-button>  -->
+
+
+
+</ion-content>
